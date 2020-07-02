@@ -15,7 +15,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://yoursite.com/images/spaceBug.jpg">
 <meta property="article:published_time" content="2020-07-02T16:01:28.000Z">
-<meta property="article:modified_time" content="2020-07-02T17:00:37.587Z">
+<meta property="article:modified_time" content="2020-07-02T20:34:02.570Z">
 <meta property="article:author" content="TianLuke33">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://yoursite.com/images/spaceBug.jpg">
@@ -131,7 +131,7 @@
     <div><a class="about  site_url"  href="/about">About</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="4">
-<input type="hidden" id="yelog_site_word_count" value="338">
+<input type="hidden" id="yelog_site_word_count" value="328">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -254,12 +254,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-07-02 15:53:31'>2020-07-01 12:41</time>
+            Created At : <time class="date" title='Updated At: 2020-07-02 16:04:16'>2020-07-01 12:41</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:27</span>
+        <span>Count:17</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -273,6 +273,17 @@
             </span>
         </span>
         
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                Comment:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
         
     </div>
     
@@ -294,9 +305,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<p>This article totally has &lt;%=wordcount(post.content) %&gt; words.</p>
-<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><hr>
+        <h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><hr>
 <h2 id="Test-with-Heart-Image"><a href="#Test-with-Heart-Image" class="headerlink" title="Test with Heart Image"></a>Test with Heart Image</h2><hr>
 <h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><a href="https://openaccess.thecvf.com/content_cvpr_2018/papers/Balakrishnan_An_Unsupervised_Learning_CVPR_2018_paper.pdf" target="_blank" rel="noopener">https://openaccess.thecvf.com/content_cvpr_2018/papers/Balakrishnan_An_Unsupervised_Learning_CVPR_2018_paper.pdf</a><br><a href="https://github.com/voxelmorph/voxelmorph" target="_blank" rel="noopener">https://github.com/voxelmorph/voxelmorph</a></p>
 
@@ -307,6 +316,27 @@
 
 
 
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: 'f941b4ed80ba970efc89',
+            clientSecret: '583f79763e3b5bebf1fcfd81b55d65c0ecfe454b',
+            repo: 'TianLuke33/TianLuke33.github.io',
+            owner: 'TianLuke33',
+            admin: ['TianLuke33'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'en',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
 
 
 
