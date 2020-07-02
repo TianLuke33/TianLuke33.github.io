@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Themes</title>
+      <link href="/2020/07/02/Themes/"/>
+      <url>/2020/07/02/Themes/</url>
+      
+        <content type="html"><![CDATA[<h2 id="3-hexo"><a href="#3-hexo" class="headerlink" title="3-hexo"></a>3-hexo</h2><p>The first theme I am working on is this one. I chose it becasue it has category and comment. Here is some challenges I had while playing with it.</p><ol><li><p>The post category didn’t show out in blog<br>Solution: “_config.yml” in 3-hexo has category and tap setting. However, they won’t work until download hexo category plugin and tag plugin</p></li><li><p>FATAL bad indentation of a mapping entry at line 107, column 2:<br><img src="/images/spaceBug.jpg" alt=""><br>Solution: this error caused by excess blanks in “_config.yml”. Doulbe check the the spacing added.</p></li></ol><hr><h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank" rel="noopener">https://github.com/yelog/hexo-theme-3-hexo</a><br><a href="https://github.com/hexojs/hexo-generator-category" target="_blank" rel="noopener">https://github.com/hexojs/hexo-generator-category</a><br><a href="https://github.com/hexojs/hexo-generator-tag" target="_blank" rel="noopener">https://github.com/hexojs/hexo-generator-tag</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Study &#39;An Unsupervised Learning Model for Deformable Medical Image Registration&#39;</title>
+      <link href="/2020/07/01/Study-An-Unsupervised-Learning-Model-for-Deformable-Medical-Image-Registration/"/>
+      <url>/2020/07/01/Study-An-Unsupervised-Learning-Model-for-Deformable-Medical-Image-Registration/</url>
+      
+        <content type="html"><![CDATA[<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><p>This article totally has &lt;%=wordcount(post.content) %&gt; words.</p><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><hr><h2 id="Test-with-Heart-Image"><a href="#Test-with-Heart-Image" class="headerlink" title="Test with Heart Image"></a>Test with Heart Image</h2><hr><h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><a href="https://openaccess.thecvf.com/content_cvpr_2018/papers/Balakrishnan_An_Unsupervised_Learning_CVPR_2018_paper.pdf" target="_blank" rel="noopener">https://openaccess.thecvf.com/content_cvpr_2018/papers/Balakrishnan_An_Unsupervised_Learning_CVPR_2018_paper.pdf</a><br><a href="https://github.com/voxelmorph/voxelmorph" target="_blank" rel="noopener">https://github.com/voxelmorph/voxelmorph</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> ImageProcess </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>About myself</title>
+      <link href="/2020/07/01/About-myself/"/>
+      <url>/2020/07/01/About-myself/</url>
+      
+        <content type="html"><![CDATA[<h2 id="July-2020"><a href="#July-2020" class="headerlink" title="July 2020"></a>July 2020</h2><p>I am a master degree student in EE now. After college, I worked 2 years as hardware engineer and innovation engineer. I came back to school again becasue I am cerious about machine version and I want to improve my software skills. I did not choose to study CS becasue I cannot picture myself as a programmer. In my mind, I want to be the engineer to finish products instead of just get my pieces of work done. At thie moment, I am thinking to work as innovation engineer, design engineer, or EE. That means I need to learn engineering knowledges in different areas. Therefore, I design to build this blog to record the tasks I got and the lessons I learned. It is how this began.</p><hr>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2020/07/01/hello-world/"/>
+      <url>/2020/07/01/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
