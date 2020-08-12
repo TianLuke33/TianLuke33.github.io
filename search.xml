@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Bank Management System</title>
+      <link href="/2020/07/02/Bank-Management-System/"/>
+      <url>/2020/07/02/Bank-Management-System/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>2020 summer, I spent some time to work on Java and Python programming. This one is a very simple project I played with for improving Java coding skill. The following Java topic is covered in this project: Class, Parent class, Child class, Abstract class &amp; method, Inheritance, Interface, Static, and other basic Java topics</p><hr><h2 id="Goal"><a href="#Goal" class="headerlink" title="Goal"></a>Goal</h2><p>Build a bank management system which can “creat an account”,”log in”, “deposit”,”withdraw”,”check balance”,”transfer”,”loan”,”pay back”,”change password”,”logout”<br>There are four different accounts in this system: 1. Saving account; 2. Credit account; 3. Saving account with loan; 4. Credit account with loan</p><hr><h2 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h2><p><img src="/images/bankManagementSystem0.jpg" alt=""><br><img src="/images/bankManagementSystem1.jpg" alt=""><br><img src="/images/bankManagementSystem2.jpg" alt=""></p><hr><h2 id="Coding-details"><a href="#Coding-details" class="headerlink" title="Coding details"></a>Coding details</h2><hr><h2 id="Codes"><a href="#Codes" class="headerlink" title="Codes"></a>Codes</h2><p><a href="https://github.com/TianLuke33/BankManageSystem" target="_blank" rel="noopener">https://github.com/TianLuke33/BankManageSystem</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Coding </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Themes</title>
       <link href="/2020/07/02/Themes/"/>
       <url>/2020/07/02/Themes/</url>
@@ -27,7 +52,7 @@
       <link href="/2020/07/01/Study-An-Unsupervised-Learning-Model-for-Deformable-Medical-Image-Registration/"/>
       <url>/2020/07/01/Study-An-Unsupervised-Learning-Model-for-Deformable-Medical-Image-Registration/</url>
       
-        <content type="html"><![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><hr><h2 id="Test-with-Heart-Image"><a href="#Test-with-Heart-Image" class="headerlink" title="Test with Heart Image"></a>Test with Heart Image</h2><hr><h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><a href="https://openaccess.thecvf.com/content_cvpr_2018/papers/Balakrishnan_An_Unsupervised_Learning_CVPR_2018_paper.pdf" target="_blank" rel="noopener">https://openaccess.thecvf.com/content_cvpr_2018/papers/Balakrishnan_An_Unsupervised_Learning_CVPR_2018_paper.pdf</a><br><a href="https://github.com/voxelmorph/voxelmorph" target="_blank" rel="noopener">https://github.com/voxelmorph/voxelmorph</a></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>It is a project I got based on research paper ‘An Unsupervised Learning Model for Deformable Medical Image Registration’. In this paper, authors introduced an algorithm for unsupervised n-D image registration. Image registration is an important task in image processing used in many ways. For this paper, image registration is working with multiple images to find out the changing between them. Their VoxelMorph CNN Architecture is based on UNet. To check the architecture, the following code can be used.<br>“import tensorflow as tf<br> tf.keras.utils.plot_model(vxm_model, show_shapes=True)”<br>They actually have two architectures. One is faster, the other one has higher accuracy. To understand better, the two input images are moving image(M) and fixed image(F). During the training, parameters for function g registers M through F. With spatial transform function, the output is moved image. Then loss function is used to check between moved image and fixed image.</p><hr><h2 id="Test-with-Heart-Image"><a href="#Test-with-Heart-Image" class="headerlink" title="Test with Heart Image"></a>Test with Heart Image</h2><p>The training and testing code should be “train_miccai2018.py” and “test_miccai2018.py”. I don’t have a gpu on my laptop. Therefore, I just run the code on kaggle. After I run the code, I received the following image output. The first line is three slices from Fixed 3D Image(F). It is the second untreated brain image. Second line is Moved Image. It is the output after registration. They are nice and clean<br><img src="/images/brainImage.jpg" alt=""><br>To go deeper, I tried to test with some heart image. I only changed the input images and the parameters about images’ size. I used the same 3D model from the paper which was trainned from brain images. The size of input need to be multipled by 32. The brain image is [160,192,224]. The heart image I used is [64,32,32]. The output is showing in the following image. Yes, it is just part of the heart image. Also, the result doesn’t go very well. The registrated image disappeared. The grey levels are different.<br><img src="/images/errorHeartImage.jpg" alt=""><br>Next step, I am going to use 3D gaussian filter to denoise the heart images and check the plot function.<br>The plot function is “neuron.plot.slices(mid_slices_fixed + mid_slices_pred, cmaps=[‘gray’], do_colorbars=True, grid=[2,3]);” From how they import neuron, I find out the plot.py code under “voxelmorph-master/ext/neuron/neuron”. For gaussian filter, “scipy.ndimage” package is helpful.<br>To check the max element in an array: np.amax()</p><p>I resized the brain image to [64,32,32] to check whether the small size image cost the problem. Then I changed the orientation for the dimensionalities of images. At the end, I sloved the problem by change the grey level of heart images. The grey level for the brain image is under 1. Need to be careful for the input samples run in the test are the updated images.</p><hr><h2 id="Histogram-for-3D-Images"><a href="#Histogram-for-3D-Images" class="headerlink" title="Histogram for 3D Images"></a>Histogram for 3D Images</h2><p>To make sure the heart images are scaled correctly, I need to find out 95% of largest value from their histograms. Then normalize to get new images and register the new images.<br>The heart images are really dark their histograms is similar with the following graph. PS. There are three or four voxels from the original images are above 800. I am not sure why, but I used gaussian filter. Then the maxmum for these arraies are below 255. img.astype(‘int’) can be used to change data type in array.<br><img src="/images/heartHistogram.jpg" alt=""></p><hr><h2 id="One-mistake-and-updating"><a href="#One-mistake-and-updating" class="headerlink" title="One mistake and updating"></a>One mistake and updating</h2><p>After contact with my professor, I noticed the output results are incorrect. The registrated images actually disappeared. The reason to cost this problem is I did not input the normalized images. After normalized, the gray level for images are all between 0 and 1. The following code is how I normalized all of these images.</p><p>max1 = np.amax(heart_image_1)<br>max2 = np.amax(heart_image_2)<br>min1 = np.amin(heart_image_1)<br>min2 = np.amin(heart_image_2)<br>print(max1,max2,min1,min2)<br>heart_image_1 = (heart_image_1-min1)/(max1-min1)<br>heart_image_2 = (heart_image_2-min2)/(max2-min2)</p><p>Instead of remove 95% of brightest pixels. I actually should only remove 1% of brightest pixels. The code I used is showing here:</p><p>greyLevel1 = heart_image_1.ravel()<br>greyLevel2 = heart_image_2.ravel()<br>newGrey1 = np.sort(-greyLevel1)<br>newGrey2 = np.sort(-greyLevel2)<br>[a,b,c] = heart_image_1.shape<br>for x in range(a):<br>    for y in range(b):<br>        for z in range(c):<br>            if heart_image_1[x,y,z] &gt; (-newGrey1[656]):<br>                heart_image_1[x,y,z] = (-newGrey1[656])<br>for d in range(a):<br>    for e in range(b):<br>        for f in range(c):<br>            if heart_image_2[d,e,f] &gt; (-newGrey2[656]):<br>               heart_image_2[d,e,f] = (-newGrey2[656])</p><hr><h2 id="Removing-1-brightest-pixels-VS-Gaussian-filter"><a href="#Removing-1-brightest-pixels-VS-Gaussian-filter" class="headerlink" title="Removing 1% brightest pixels VS. Gaussian filter"></a>Removing 1% brightest pixels VS. Gaussian filter</h2><p>Next step, I compared two different ways to denoise heart images. One is removing 1% brightest pixels before normalized and registrated. The other one is using Gaussian filter to denoise before normalized and registrated. Package scipy.ndimage has 3D gaussian filter. With the package code is very simple:</p><p>from scipy.ndimage import gaussian_filter<br>heart_image_1 = gaussian_filter(heart_image_1,sigma=1)<br>heart_image_2 = gaussian_filter(heart_image_2,sigma=1)</p><p>The output shows gaussian filter has lower registrated error. But the images are fuzzier because it over denoised. Even though removing 1% brightest pixels has higher error data. It still is a better way for image processing.</p><hr><h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>It is a summer project I worked in 2020. For me, it is a chance understand image registration and try normalization, gaussian filter,etc. This project, itself, is not challengeable. The model was finished by others. It still is an enter level work for me to go through and study these topics.</p><hr><h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><a href="https://openaccess.thecvf.com/content_cvpr_2018/papers/Balakrishnan_An_Unsupervised_Learning_CVPR_2018_paper.pdf" target="_blank" rel="noopener">https://openaccess.thecvf.com/content_cvpr_2018/papers/Balakrishnan_An_Unsupervised_Learning_CVPR_2018_paper.pdf</a><br><a href="https://github.com/voxelmorph/voxelmorph" target="_blank" rel="noopener">https://github.com/voxelmorph/voxelmorph</a></p>]]></content>
       
       
       <categories>
@@ -36,6 +61,12 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> ImageProcess, Python </tag>
+            
+        </tags>
       
     </entry>
     
