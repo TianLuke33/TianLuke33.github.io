@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Luke&#39;s personal blog</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="Luke&#39;s personal blog">
+  <title>Study &#39;Med3D: Transfer Learning for 3D Medical Image Analysis&#39; | Luke&#39;s personal blog</title>
+  <meta name="keywords" content=" ImageProcess, Python ">
+  <meta name="description" content="Study &#39;Med3D: Transfer Learning for 3D Medical Image Analysis&#39; | Luke&#39;s personal blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="IntroductionFor my first year of master degree studying, I was focusing on Image Processing and Computer Vision topics. In this blog I am going to edit everything I learned about these two topics. By">
 <meta property="og:type" content="article">
@@ -54,7 +54,7 @@
 
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/" class="avatar_target">
     <img class="avatar" src="/img/luke.jpg" />
@@ -275,12 +275,71 @@
         </div>
     </div>
 </aside>
-<div id="post" class="index">
+<div id="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-Study-Med3D-Transfer-Learning-for-3D-Medical-Image_Analysis" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#About-Myself"><span class="toc-text">About Myself</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#July-2020"><span class="toc-text">July 2020</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#About-My-Blog"><span class="toc-text">About My Blog</span></a></li></ol></li></ol>
+        <h1 class="article-title">Study &#39;Med3D: Transfer Learning for 3D Medical Image Analysis&#39;</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="ImageProcess">ImageProcess</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color1">ImageProcess, Python</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2020-08-18 12:49:19'>2020-08-18 10:45</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>Count:222</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                Comment:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Introduction"><span class="toc-text">Introduction</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Step1"><span class="toc-text">Step1:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Step2"><span class="toc-text">Step2:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Step3"><span class="toc-text">Step3:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Extracting-feature-from-pre-trained-Med3D-model-Then-trying-with-other-medical-tasks-to-boost-the-network-performance"><span class="toc-text">Extracting feature from pre-trained Med3D model. Then trying with other medical tasks to boost the network performance.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Details-Describe"><span class="toc-text">Details Describe</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#References"><span class="toc-text">References</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -293,16 +352,26 @@
     }
 </style>
 </div>
-            <h1 id="About-Myself"><a href="#About-Myself" class="headerlink" title="About Myself"></a>About Myself</h1><h2 id="July-2020"><a href="#July-2020" class="headerlink" title="July 2020"></a>July 2020</h2><p>I am a master degree student in EE now. After college, I worked 2 years as hardware engineer and innovation engineer. I came back to school again because I am curious about machine version and I want to improve my software skills. I did not choose to study CS because I cannot picture myself as a programmer. In my mind, I want to be the engineer to finish products instead of just get my pieces of work done. At this moment, I am thinking to work as innovation engineer, design engineer, or EE. That means I need to learn engineering knowledge in different areas. Therefore, I design to build this blog to record the tasks I got and the lessons I learned. It is how this began.</p>
-<h2 id="About-My-Blog"><a href="#About-My-Blog" class="headerlink" title="About My Blog"></a>About My Blog</h2><p>It is my personal blog. At this moment, I am planning to use it for engineering information.</p>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<p>I have written <code class="article_number"></code> articles. Totally have <code class="site_word_count"></code> words.</p>
-<p><code class="site_uv"></code> people have visited. <code class="site_pv"></code> times.</p>
-<p>This blog is created by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> . It deploied on (<a href="https://github.com/TianLuke33/TianLuke33.github.io" target="_blank" rel="noopener">https://github.com/TianLuke33/TianLuke33.github.io</a>) </p>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>By working through the paper ‘Med3D: Transfer Learning for 3D Medical Image Analysis’, I am going to work on 3D image segmentation.</p>
+<p>This paper is trying to solve the following challenge: “It is extremely challenging to build a sufficiently large dataset due to diffculty of data acquisition and annotation in 3D medical imaging.” They build a image data set called 3DSeg-8 by aggregate other dataset. Then they designed Med3D, a heterogeneous 3D network, to pre-train models. As the paper show, Med3D can speed up training covergence and improve accuracy.</p>
+<p>As they said, “The motivation of our work is to train a high performance DCNN model with a relatively large 3D medical dataset, that can be used as the backbone pre-trained model to boost other tasks with insufficient training data.” There are 3 steps they did in their work.</p>
+<h4 id="Step1"><a href="#Step1" class="headerlink" title="Step1:"></a>Step1:</h4><p>Collecting several 3D segmentation datasets and put them together. The new dataset is 3DSeg-8. Then they normalized 3DSeg-8 for both spatial and intensity distribution.</p>
+<h4 id="Step2"><a href="#Step2" class="headerlink" title="Step2:"></a>Step2:</h4><p>Training a DCNN model. They call this model Med3D. This network has same encoder and different decoder branches for each specific dataset.</p>
+<h4 id="Step3"><a href="#Step3" class="headerlink" title="Step3:"></a>Step3:</h4><h2 id="Extracting-feature-from-pre-trained-Med3D-model-Then-trying-with-other-medical-tasks-to-boost-the-network-performance"><a href="#Extracting-feature-from-pre-trained-Med3D-model-Then-trying-with-other-medical-tasks-to-boost-the-network-performance" class="headerlink" title="Extracting feature from pre-trained Med3D model. Then trying with other medical tasks to boost the network performance."></a>Extracting feature from pre-trained Med3D model. Then trying with other medical tasks to boost the network performance.</h2><h2 id="Details-Describe"><a href="#Details-Describe" class="headerlink" title="Details Describe"></a>Details Describe</h2><hr>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><a href="https://arxiv.org/abs/1904.00625" target="_blank" rel="noopener">https://arxiv.org/abs/1904.00625</a><br><a href="https://github.com/Tencent/MedicalNet" target="_blank" rel="noopener">https://github.com/Tencent/MedicalNet</a></p>
 
-        </article>
-        
-        
+      
+       <hr><span style="font-style: italic;color: gray;"> If you have any questions, please contact with tianluwu@gmail.com </span>
+    </div>
+</article>
+
+
+
+
+
     <div id="comments"></div>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 
@@ -324,6 +393,13 @@
 </script>
 
 
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">
@@ -332,11 +408,11 @@
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
     </div>
-</div>
-<div class="full-toc">
-    <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
 <a class="" id="rocket" ></a>
 
+    </div>
 </div>
 
 </body>

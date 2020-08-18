@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>Study &#39;Computer Vision and Image Processing&#39;</title>
+      <link href="/2020/08/18/Computer-Vision-and-Image_processing/"/>
+      <url>/2020/08/18/Computer-Vision-and-Image_processing/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>For my first year of master degree studying, I was focusing on Image Processing and Computer Vision topics. In this blog I am going to edit everything I learned about these two topics. By doing this I can have a chance to review the details I have learned.</p><hr><h2 id="What-is-the-differences-between-Image-Processing-and-Computer-Vision"><a href="#What-is-the-differences-between-Image-Processing-and-Computer-Vision" class="headerlink" title="What is the differences between Image Processing and Computer Vision?"></a>What is the differences between Image Processing and Computer Vision?</h2><p>The output for Image Processing still is images. For Computer Vision, its output can be images or knowledge.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> ImageProcess </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ImageProcess, MachineVision, LectureReview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Study &#39;Med3D: Transfer Learning for 3D Medical Image Analysis&#39;</title>
+      <link href="/2020/08/18/Study-Med3D-Transfer-Learning-for-3D-Medical-Image_Analysis/"/>
+      <url>/2020/08/18/Study-Med3D-Transfer-Learning-for-3D-Medical-Image_Analysis/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>By working through the paper ‘Med3D: Transfer Learning for 3D Medical Image Analysis’, I am going to work on 3D image segmentation.</p><p>This paper is trying to solve the following challenge: “It is extremely challenging to build a sufficiently large dataset due to diffculty of data acquisition and annotation in 3D medical imaging.” They build a image data set called 3DSeg-8 by aggregate other dataset. Then they designed Med3D, a heterogeneous 3D network, to pre-train models. As the paper show, Med3D can speed up training covergence and improve accuracy.</p><p>As they said, “The motivation of our work is to train a high performance DCNN model with a relatively large 3D medical dataset, that can be used as the backbone pre-trained model to boost other tasks with insufficient training data.” There are 3 steps they did in their work.</p><h4 id="Step1"><a href="#Step1" class="headerlink" title="Step1:"></a>Step1:</h4><p>Collecting several 3D segmentation datasets and put them together. The new dataset is 3DSeg-8. Then they normalized 3DSeg-8 for both spatial and intensity distribution.</p><h4 id="Step2"><a href="#Step2" class="headerlink" title="Step2:"></a>Step2:</h4><p>Training a DCNN model. They call this model Med3D. This network has same encoder and different decoder branches for each specific dataset.</p><h4 id="Step3"><a href="#Step3" class="headerlink" title="Step3:"></a>Step3:</h4><h2 id="Extracting-feature-from-pre-trained-Med3D-model-Then-trying-with-other-medical-tasks-to-boost-the-network-performance"><a href="#Extracting-feature-from-pre-trained-Med3D-model-Then-trying-with-other-medical-tasks-to-boost-the-network-performance" class="headerlink" title="Extracting feature from pre-trained Med3D model. Then trying with other medical tasks to boost the network performance."></a>Extracting feature from pre-trained Med3D model. Then trying with other medical tasks to boost the network performance.</h2><h2 id="Details-Describe"><a href="#Details-Describe" class="headerlink" title="Details Describe"></a>Details Describe</h2><hr><h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><a href="https://arxiv.org/abs/1904.00625" target="_blank" rel="noopener">https://arxiv.org/abs/1904.00625</a><br><a href="https://github.com/Tencent/MedicalNet" target="_blank" rel="noopener">https://github.com/Tencent/MedicalNet</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> ImageProcess </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ImageProcess, Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Themes</title>
       <link href="/2020/07/02/Themes/"/>
       <url>/2020/07/02/Themes/</url>
