@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>About myself | Luke&#39;s personal blog</title>
+  <title>Paper Reading Notes in Machine Vision Area | Luke&#39;s personal blog</title>
   <meta name="keywords" content="">
-  <meta name="description" content="About myself | Luke&#39;s personal blog">
+  <meta name="description" content="Paper Reading Notes in Machine Vision Area | Luke&#39;s personal blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="IntroductionIt is a project to use Convolutional Neural Network(CNN) to recognize how many objects in a 3D image and findout the superficial areas for all the objects. First step, only spheres will be">
 <meta property="og:type" content="article">
@@ -403,26 +403,32 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-About-myself" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Paper-Notes-in-Machine-Vision-Area" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">About myself</h1>
+        <h1 class="article-title">Paper Reading Notes in Machine Vision Area</h1>
     
     <div class="article-meta">
         
-        <span class="top"><a>置顶</a></span>
         
         
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Reading Notes">Reading Notes</a>
+            
+        </span>
         
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-08-17 13:21:15'>2020-07-01 12:16</time>
+            Created At : <time class="date" title='Updated At: 2021-09-16 15:32:11'>2021-09-10 10:18</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:128</span>
+        <span>Count:361</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -452,7 +458,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#July-2020"><span class="toc-text">July 2020</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Introduction"><span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Dataset-Information"><span class="toc-text">Dataset Information</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -468,8 +474,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="July-2020"><a href="#July-2020" class="headerlink" title="July 2020"></a>July 2020</h2><p>I am a master degree student in EE now. After college, I worked 2 years as hardware engineer and innovation engineer. I came back to school again because I am curious about machine version and I want to improve my software skills. I did not choose to study CS because I cannot picture myself as a programmer. In my mind, I want to be the engineer to finish products instead of just get my pieces of work done. At this moment, I am thinking to work as innovation engineer, design engineer, or EE. That means I need to learn engineering knowledge in different areas. Therefore, I design to build this blog to record the tasks I got and the lessons I learned. It is how this began.</p>
+        <h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p>This blog is going to be used to follow up the paper I read about sensor topics. Therefore, I can go back and check easily if I need to review or remember some topics.</p>
 <hr>
+<h3 id="Dataset-Information"><a href="#Dataset-Information" class="headerlink" title="Dataset Information"></a>Dataset Information</h3><p>For the projects, I am searching for more informtion about dataset used for Machine Vision topic. In master degree, I was using the dataset directly for researching. However, at this point I have to build a dataset for the special task. Therefore, I have to research how to create the dataset can be used. The project is similar to diagnoisis cancer from medical images, so I began from there.</p>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S2352914819301133" target="_blank" rel="noopener">“Cancer Diagnosis in histopathological image: CNN based approach”</a><br>Datasets for breast cancer: Breast Cancer for breast (WDBC) cancer Wisconsin Original Data Set (UC Irvine Machine Learning Repository), MITOS- ATYPIA-14, and BreakHis.<br>This used the labeled (benign/malignant) input image form the raw pixels and highlighted the visual patterns, and then utilize those patterns to distinguish between the visual patterns, and then utilize those patterns to distinguish betwwen non-cancerous and cancer containing tissue, working akin to digital staining, which spotlights image segments crucial for diagnostic decisions, with the help of a classifier network.<br>Most of the pixels in the image are redundant and do not contribute substantially to the intrinsic information of an image. While dealing with AI networks, it is required to eliminate them to avoid unnecessary computational overhead. This can be achieved by compression techniques. We begin the implementation of our deep net by processing the images in the dataset.<br>Feature learning is a crucial step in the classification process for both human and machine algorithm. A study has shown that the human brain is sensitive to shapes, while computers are more sensitive to patterns and texture.</p>
+<p><a href="https://ieeexplore.ieee.org/document/7312934" target="_blank" rel="noopener">“A Dataset for Breast Cancer Histopathological Image Classification”</a></p>
+<p>For the project, dataset will use the synthetic data. A study has shown that the human brain is sensitive to shapes, while computers are more sensitive to patterns and texture. I am goint to check how it might will affect the training for our project.<br><a href="https://openreview.net/forum?id=Bygh9j09KX" target="_blank" rel="noopener">“ImageNet-trained CNNs are biased towards texture; increasing shape bias improves accuracy and robustness”</a></p>
 
       
        <hr><span style="font-style: italic;color: gray;"> If you have any questions, please contact with tianluwu@gmail.com </span>

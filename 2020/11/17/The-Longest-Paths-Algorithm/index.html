@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>About myself | Luke&#39;s personal blog</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="About myself | Luke&#39;s personal blog">
+  <title>The Longest Paths Algorithm | Luke&#39;s personal blog</title>
+  <meta name="keywords" content=" School, Algorithm ">
+  <meta name="description" content="The Longest Paths Algorithm | Luke&#39;s personal blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="IntroductionIt is a project to use Convolutional Neural Network(CNN) to recognize how many objects in a 3D image and findout the superficial areas for all the objects. First step, only spheres will be">
 <meta property="og:type" content="article">
@@ -403,26 +403,39 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-About-myself" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-The-Longest-Paths-Algorithm" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">About myself</h1>
+        <h1 class="article-title">The Longest Paths Algorithm</h1>
     
     <div class="article-meta">
         
-        <span class="top"><a>置顶</a></span>
         
         
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Algorithm">Algorithm</a>
+            
+        </span>
         
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color3">School, Algorithm</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-08-17 13:21:15'>2020-07-01 12:16</time>
+            Created At : <time class="date" title='Updated At: 2020-11-17 12:32:47'>2020-11-17 12:27</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:128</span>
+        <span>Count:168</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -452,7 +465,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#July-2020"><span class="toc-text">July 2020</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Introduction"><span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Bellman-Ford-Algorithm"><span class="toc-text">Bellman-Ford Algorithm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Liao-Wong-Algorithm"><span class="toc-text">Liao-Wong Algorithm</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -468,8 +481,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="July-2020"><a href="#July-2020" class="headerlink" title="July 2020"></a>July 2020</h2><p>I am a master degree student in EE now. After college, I worked 2 years as hardware engineer and innovation engineer. I came back to school again because I am curious about machine version and I want to improve my software skills. I did not choose to study CS because I cannot picture myself as a programmer. In my mind, I want to be the engineer to finish products instead of just get my pieces of work done. At this moment, I am thinking to work as innovation engineer, design engineer, or EE. That means I need to learn engineering knowledge in different areas. Therefore, I design to build this blog to record the tasks I got and the lessons I learned. It is how this began.</p>
+        <h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>The Liao-Wong Algorithm and Bellman-Ford Algorithm are two algorithms for longest paths problem I touched through school work. There are many algorithms I learned through classes. I believe they will be useful for the future. Since I spent time to understand them, I think it is worth to spent sometime to collect and organize them here. It will be easy for me to review them later.</p>
+<p>There are a lot of algorithm for shortest paths. Longest paths are a little bit complex problem to handle.</p>
 <hr>
+<h2 id="Bellman-Ford-Algorithm"><a href="#Bellman-Ford-Algorithm" class="headerlink" title="Bellman-Ford Algorithm"></a>Bellman-Ford Algorithm</h2><p>Bellman-Ford Algorithm is very straight forward algorithm from shortest paths. The idea is switching the positive and negative weights for the paths. Then using the shortest paths algorithm to find out the shortest path. Change it pack to positive weight. It is the longest path.</p>
+<hr>
+<h2 id="Liao-Wong-Algorithm"><a href="#Liao-Wong-Algorithm" class="headerlink" title="Liao-Wong Algorithm"></a>Liao-Wong Algorithm</h2><p>Liao-Wong Algorithm needs to ignore the negative weight paths firstly. Find the longest path only with the positive weight paths. Then adding the negative weight paths and adjust the solutions. </p>
 
       
        <hr><span style="font-style: italic;color: gray;"> If you have any questions, please contact with tianluwu@gmail.com </span>
